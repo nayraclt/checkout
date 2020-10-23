@@ -1,0 +1,2299 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Serviços de Checkout",
+        "description": "<ul><li>Disponibilizado para uso unico e exclusivo da empresa RaiaDrogasil S.A.</li><li>Utilize a busca para filtrar por versões. Ex: <b>http://site.com.br/docs?version=1</b> ou <b>http://site.com.br/docs?version=2</b></li></ul>",
+        "version": "v1"
+    },
+    "paths": {
+        "/api/v1/configurations": {
+            "get": {
+                "tags": [
+                    "Configuracao v1"
+                ],
+                "summary": "Listar todos os registros",
+                "description": "Retorna multiplos registros assim como uma paginação",
+                "operationId": "chassi_Configuracao_all",
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "description": "ID do registro",
+                                                        "type": "string",
+                                                        "example": "5ec580976f7e83224741e392"
+                                                    },
+                                                    "nameGroup": {
+                                                        "description": "Nome do agrupamento de configuracao",
+                                                        "type": "string",
+                                                        "example": "RD"
+                                                    },
+                                                    "nameIdentify": {
+                                                        "description": "Nome da identificação da configuracao",
+                                                        "type": "string",
+                                                        "example": "URI_API_SEARCH_CUSTOMER_RD"
+                                                    },
+                                                    "name": {
+                                                        "description": "Nome da configuração",
+                                                        "type": "string",
+                                                        "example": "Uri Consultar Cliente RD"
+                                                    },
+                                                    "value": {
+                                                        "description": "Valor da configuracao",
+                                                        "type": "string",
+                                                        "example": "https://api-dev.rd.com.br/v1/api/customers/"
+                                                    },
+                                                    "nameStore": {
+                                                        "description": "Nome da loja [DROGASIO, DROGARAIA, ONOFRE, NA]",
+                                                        "type": "integer",
+                                                        "example": "NA"
+                                                    },
+                                                    "channelSite": {
+                                                        "description": "Indicativo de utilizacao no canal SITE",
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    },
+                                                    "channelApp": {
+                                                        "description": "Indicativo de utilizacao no canal APP",
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    },
+                                                    "channelTlv": {
+                                                        "description": "Indicativo de utilizacao no canal TLV",
+                                                        "type": "integer",
+                                                        "example": 1
+                                                    },
+                                                    "typeConfiguration": {
+                                                        "description": "Indicativo de tipo de configuracao [STRING, NUMBER, BOOLEAN, COMBO, PASSWORD]",
+                                                        "type": "string",
+                                                        "example": "STRING"
+                                                    },
+                                                    "createdAt": {
+                                                        "description": "Data de criação da configuracao",
+                                                        "type": "string",
+                                                        "example": "2020-05-20T19:10:15.000000Z"
+                                                    },
+                                                    "updatedAt": {
+                                                        "description": "Data de atualizacao da configuracao",
+                                                        "type": "string",
+                                                        "example": "2020-05-20T19:10:15.000000Z"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "metadata": {
+                                            "properties": {
+                                                "limit": {
+                                                    "description": "Quantidade de registros na paginacao",
+                                                    "type": "integer",
+                                                    "example": 15
+                                                },
+                                                "offset": {
+                                                    "description": "Inicio da paginacao",
+                                                    "type": "integer",
+                                                    "example": 0
+                                                },
+                                                "totalCount": {
+                                                    "description": "Quantidade de registros",
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "pages": {
+                                                    "description": "SKU do produto",
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "links": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "properties": {
+                                                            "self": {
+                                                                "description": "Link da pagina atual",
+                                                                "type": "string",
+                                                                "example": "/api/v1/configurations?limit=15&offset=0"
+                                                            },
+                                                            "first": {
+                                                                "description": "Link da primera pagina",
+                                                                "type": "string",
+                                                                "example": "/api/v1/configurations?limit=15&offset=0"
+                                                            },
+                                                            "previous": {
+                                                                "description": "Link da pagina anterior",
+                                                                "type": "string",
+                                                                "example": ""
+                                                            },
+                                                            "next": {
+                                                                "description": "Link da proxima pagina",
+                                                                "type": "string",
+                                                                "example": "/api/v1/configurations?limit=15&offset=15"
+                                                            },
+                                                            "last": {
+                                                                "description": "Link da ultima pagina",
+                                                                "type": "string",
+                                                                "example": "/api/v1/configurations?limit=15&offset=11"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Configuracao v1"
+                ],
+                "summary": "Incluir um registro",
+                "operationId": "chassi_Configuracao_add",
+                "requestBody": {
+                    "description": "Dados de entrada",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "Nome da configuração",
+                                        "type": "string",
+                                        "example": "Uri Consultar Cliente RD"
+                                    },
+                                    "nameGroup": {
+                                        "description": "Nome do agrupamento de configuracao",
+                                        "type": "string",
+                                        "example": "RD"
+                                    },
+                                    "nameIdentify": {
+                                        "description": "Nome da identificação da configuracao",
+                                        "type": "string",
+                                        "example": "URI_API_SEARCH_CUSTOMER_RD"
+                                    },
+                                    "nameStore": {
+                                        "description": "Nome da loja [DROGASIO, DROGARAIA, ONOFRE, NA]",
+                                        "type": "integer",
+                                        "example": "NA"
+                                    },
+                                    "channelSite": {
+                                        "description": "Indicativo de utilizacao no canal SITE",
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "channelApp": {
+                                        "description": "Indicativo de utilizacao no canal APP",
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "channelTlv": {
+                                        "description": "Indicativo de utilizacao no canal TLV",
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "value": {
+                                        "description": "Valor da configuracao",
+                                        "type": "string",
+                                        "example": "https://api-dev.rd.com.br/v1/api/customers/"
+                                    },
+                                    "typeConfiguration": {
+                                        "description": "Indicativo de tipo de configuracao [STRING, NUMBER, BOOLEAN, COMBO, PASSWORD]",
+                                        "type": "string",
+                                        "example": "STRING"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro criado com sucesso"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Dados inválidos na requisição",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "description": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "0": {
+                                                        "description": "Mensagem retornada",
+                                                        "type": "string",
+                                                        "example": "The given data was invalid."
+                                                    },
+                                                    "XXXXX": {
+                                                        "description": "Mensagem retornada",
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string",
+                                                            "example": "Tipo inválido"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/configurations/{id}": {
+            "get": {
+                "tags": [
+                    "Configuracao v1"
+                ],
+                "summary": "Recuperar um registro pelo ID",
+                "description": "Retona apenas um registro",
+                "operationId": "chassi_Configuracao_get",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID do registro a ser buscado",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "id": {
+                                                    "description": "ID do registro",
+                                                    "type": "string",
+                                                    "example": "5ec580976f7e83224741e392"
+                                                },
+                                                "nameGroup": {
+                                                    "description": "Nome do agrupamento de configuracao",
+                                                    "type": "string",
+                                                    "example": "RD"
+                                                },
+                                                "nameIdentify": {
+                                                    "description": "Nome da identificação da configuracao",
+                                                    "type": "string",
+                                                    "example": "URI_API_SEARCH_CUSTOMER_RD"
+                                                },
+                                                "name": {
+                                                    "description": "Nome da configuração",
+                                                    "type": "string",
+                                                    "example": "Uri Consultar Cliente RD"
+                                                },
+                                                "value": {
+                                                    "description": "Valor da configuracao",
+                                                    "type": "string",
+                                                    "example": "https://api-dev.rd.com.br/v1/api/customers/"
+                                                },
+                                                "nameStore": {
+                                                    "description": "Nome da loja [DROGASIO, DROGARAIA, ONOFRE, NA]",
+                                                    "type": "integer",
+                                                    "example": "NA"
+                                                },
+                                                "channelSite": {
+                                                    "description": "Indicativo de utilizacao no canal SITE",
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "channelApp": {
+                                                    "description": "Indicativo de utilizacao no canal APP",
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "channelTlv": {
+                                                    "description": "Indicativo de utilizacao no canal TLV",
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "typeConfiguration": {
+                                                    "description": "Indicativo de tipo de configuracao [STRING, NUMBER, BOOLEAN, COMBO, PASSWORD]",
+                                                    "type": "string",
+                                                    "example": "STRING"
+                                                },
+                                                "createdAt": {
+                                                    "description": "Data de criação da configuracao",
+                                                    "type": "string",
+                                                    "example": "2020-05-20T19:10:15.000000Z"
+                                                },
+                                                "updatedAt": {
+                                                    "description": "Data de atualizacao da configuracao",
+                                                    "type": "string",
+                                                    "example": "2020-05-20T19:10:15.000000Z"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encontrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Configuracao v1"
+                ],
+                "summary": "Atualizar um registro existente",
+                "operationId": "chassi_Configuracao_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID do registro a ser atualizado",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Dados de entrada",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "description": "Nome da configuração",
+                                        "type": "string",
+                                        "example": "Uri Consultar Cliente RD"
+                                    },
+                                    "nameGroup": {
+                                        "description": "Nome do agrupamento de configuracao",
+                                        "type": "string",
+                                        "example": "RD"
+                                    },
+                                    "nameIdentify": {
+                                        "description": "Nome da identificação da configuracao",
+                                        "type": "string",
+                                        "example": "URI_API_SEARCH_CUSTOMER_RD"
+                                    },
+                                    "nameStore": {
+                                        "description": "Nome da loja [DROGASIO, DROGARAIA, ONOFRE, NA]",
+                                        "type": "integer",
+                                        "example": "NA"
+                                    },
+                                    "channelSite": {
+                                        "description": "Indicativo de utilizacao no canal SITE",
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "channelApp": {
+                                        "description": "Indicativo de utilizacao no canal APP",
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "channelTlv": {
+                                        "description": "Indicativo de utilizacao no canal TLV",
+                                        "type": "integer",
+                                        "example": 1
+                                    },
+                                    "value": {
+                                        "description": "Valor da configuracao",
+                                        "type": "string",
+                                        "example": "https://api-dev.rd.com.br/v1/api/customers/"
+                                    },
+                                    "typeConfiguration": {
+                                        "description": "Indicativo de tipo de configuracao [STRING, NUMBER, BOOLEAN, COMBO, PASSWORD]",
+                                        "type": "string",
+                                        "example": "STRING"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro atualizado com sucesso"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encontrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Dados inválidos na requisição",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "description": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "0": {
+                                                        "description": "Mensagem retornada",
+                                                        "type": "string",
+                                                        "example": "The given data was invalid."
+                                                    },
+                                                    "XXXXX": {
+                                                        "description": "Mensagem retornada",
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string",
+                                                            "example": "Tipo inválido"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Configuracao v1"
+                ],
+                "summary": "Remover um registro",
+                "operationId": "chassi_Configuracao_remove",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID do registro a ser removido",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro removido com sucesso"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encontrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/health/{resource}": {
+            "get": {
+                "tags": [
+                    "Health Check v1"
+                ],
+                "summary": "Testar os recursos e retorna o diagnostico",
+                "operationId": "Health_get",
+                "parameters": [
+                    {
+                        "name": "resource",
+                        "in": "path",
+                        "description": "Nome do componente a ser testado, caso queira testar todos use [all]",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "resource": {
+                                                        "description": "nome do recurso",
+                                                        "type": "string",
+                                                        "example": "mongodb"
+                                                    },
+                                                    "status": {
+                                                        "description": "Status do teste",
+                                                        "type": "string",
+                                                        "example": "OK"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Erro encontrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "resource": {
+                                                        "description": "nome do recurso",
+                                                        "type": "string",
+                                                        "example": "mongodb"
+                                                    },
+                                                    "status": {
+                                                        "description": "Status do teste",
+                                                        "type": "string",
+                                                        "example": "ERROR"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/store/{storeName}/tokenCart/retoken": {
+            "post": {
+                "tags": [
+                    "TokenCart v1"
+                ],
+                "summary": "Atualizar um token cart",
+                "operationId": "chassi_TokenCartController_reToken",
+                "parameters": [
+                    {
+                        "name": "storeName",
+                        "in": "path",
+                        "description": "Nome da loja, pode ser: ONOFRE, DROGASIL ou DROGARAIA",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "newToken",
+                                    "oldToken"
+                                ],
+                                "properties": {
+                                    "newToken": {
+                                        "type": "string",
+                                        "example": "7fa5fb8cad53cff1ff0149100d278ee2"
+                                    },
+                                    "oldToken": {
+                                        "type": "string",
+                                        "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Registro atualizado com sucesso"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Requisição inválida",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Erro ao tentar atualizar o registro"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Dados inválidos da requisição",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "description": {
+                                            "properties": {
+                                                "newToken": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "example": [
+                                                            "O campo new token é obrigatório."
+                                                        ]
+                                                    }
+                                                },
+                                                "0": {
+                                                    "type": "string",
+                                                    "example": "The given data was invalid."
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encontrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/store/{storeName}/tokenCart/retoken/event": {
+            "post": {
+                "tags": [
+                    "TokenCart v1"
+                ],
+                "summary": "Dispara o evento para atualizar o token cart nos micro serviços",
+                "operationId": "chassi_TokenCartController_reTokenEvent",
+                "parameters": [
+                    {
+                        "name": "storeName",
+                        "in": "path",
+                        "description": "Nome da loja, pode ser: ONOFRE, DROGASIL ou DROGARAIA",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "newToken",
+                                    "oldToken"
+                                ],
+                                "properties": {
+                                    "newToken": {
+                                        "type": "string",
+                                        "example": "7fa5fb8cad53cff1ff0149100d278ee2"
+                                    },
+                                    "oldToken": {
+                                        "type": "string",
+                                        "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Evento de retoken disparado com sucesso"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Dados inválidos da requisição",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "description": {
+                                            "properties": {
+                                                "newToken": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "example": [
+                                                            "O campo new token é obrigatório."
+                                                        ]
+                                                    }
+                                                },
+                                                "0": {
+                                                    "type": "string",
+                                                    "example": "The given data was invalid."
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/generate": {
+            "get": {
+                "tags": [
+                    "Token v1"
+                ],
+                "summary": "Gerar um token para o front",
+                "description": "Retona apenas um registro",
+                "operationId": "chassi_Token_get_front",
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "token": {
+                                            "description": "Token cacheado",
+                                            "type": "string",
+                                            "example": "5ec580976f7e83224741e392"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token": {
+            "get": {
+                "tags": [
+                    "Token v1"
+                ],
+                "summary": "Recuperar o registro de Token de conexão",
+                "description": "Retona apenas um registro",
+                "operationId": "chassi_Token_get",
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "token": {
+                                                    "description": "Token cacheado",
+                                                    "type": "string",
+                                                    "example": "5ec580976f7e83224741e392"
+                                                },
+                                                "createdAt": {
+                                                    "description": "Data de criação do cache",
+                                                    "type": "string",
+                                                    "example": "2020-05-20T19:10:15.000000Z"
+                                                },
+                                                "ttl": {
+                                                    "description": "Tempo de vida do cache",
+                                                    "type": "integer",
+                                                    "example": 8600
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/old": {
+            "get": {
+                "tags": [
+                    "Token v1"
+                ],
+                "summary": "Recuperar o registro de Token de conexão para integracoes antigas",
+                "description": "Retona apenas um registro",
+                "operationId": "chassi_Token_getOld",
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "token": {
+                                                    "description": "Token cacheado",
+                                                    "type": "string",
+                                                    "example": "5ec580976f7e83224741e392"
+                                                },
+                                                "createdAt": {
+                                                    "description": "Data de criação do cache",
+                                                    "type": "string",
+                                                    "example": "2020-05-20T19:10:15.000000Z"
+                                                },
+                                                "ttl": {
+                                                    "description": "Tempo de vida do cache",
+                                                    "type": "integer",
+                                                    "example": 8600
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/ms/group/{tokenGroup}": {
+            "get": {
+                "tags": [
+                    "Token v1"
+                ],
+                "summary": "Recuperar o registro de Token de conexão para integracoes com Microservico RD",
+                "description": "Retona apenas um registro",
+                "operationId": "chassi_Token_getMS",
+                "parameters": [
+                    {
+                        "name": "tokenGroup",
+                        "in": "path",
+                        "description": "Nome do grupo configurado [CONNECT_MS_CUSTOMER_TOKEN , CONNECT_MS_SHIPPING_TOKEN]",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "token": {
+                                                    "description": "Token cacheado",
+                                                    "type": "string",
+                                                    "example": "5ec580976f7e83224741e392"
+                                                },
+                                                "createdAt": {
+                                                    "description": "Data de criação do cache",
+                                                    "type": "string",
+                                                    "example": "2020-05-20T19:10:15.000000Z"
+                                                },
+                                                "ttl": {
+                                                    "description": "Tempo de vida do cache",
+                                                    "type": "integer",
+                                                    "example": 8600
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/retoken": {
+            "post": {
+                "tags": [
+                    "Token v1"
+                ],
+                "summary": "Atualizar os tokens de conexao",
+                "operationId": "chassi_Token_reToken",
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "value": {
+                                                    "description": "Retorno da ação",
+                                                    "type": "boolean",
+                                                    "example": true
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/token/retoken/ms/group/{tokenGroup}": {
+            "post": {
+                "tags": [
+                    "Token v1"
+                ],
+                "summary": "Atualizar os tokens de conexao para integracoes com Microservico RD",
+                "operationId": "chassi_Token_reToken_ms",
+                "parameters": [
+                    {
+                        "name": "tokenGroup",
+                        "in": "path",
+                        "description": "Nome do grupo configurado [CONNECT_MS_CUSTOMER_TOKEN , CONNECT_MS_SHIPPING_TOKEN]",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "value": {
+                                                    "description": "Retorno da ação",
+                                                    "type": "boolean",
+                                                    "example": true
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/util/redis/clean/key/{wildcard}": {
+            "get": {
+                "tags": [
+                    "Util v1"
+                ],
+                "summary": "Remover chaves do cache",
+                "operationId": "redisClean",
+                "parameters": [
+                    {
+                        "name": "wildcard",
+                        "in": "path",
+                        "description": "Padrao para deletetar chaves do cache <br>  * => para todas, \\*???\\* => especificar um grupo de chaves",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "status": {
+                                                    "description": "Status da operação",
+                                                    "type": "integer",
+                                                    "example": 200
+                                                },
+                                                "message": {
+                                                    "description": "Mensagem retornada",
+                                                    "type": "string",
+                                                    "example": "Item removido"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "status": {
+                                                    "description": "Status da operação",
+                                                    "type": "integer",
+                                                    "example": 400
+                                                },
+                                                "message": {
+                                                    "description": "Mensagem retornada",
+                                                    "type": "string",
+                                                    "example": "Nenhum item removido"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/util/redis/find/key/{wildcard}": {
+            "get": {
+                "tags": [
+                    "Util v1"
+                ],
+                "summary": "Encontrar chaves do cache",
+                "operationId": "redisFind",
+                "parameters": [
+                    {
+                        "name": "wildcard",
+                        "in": "path",
+                        "description": "Padrao para encontrar uma chaves do cache <br>  * => para todas, \\*???\\* => especificar um grupo de chaves",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "status": {
+                                                    "description": "Status da operação",
+                                                    "type": "integer",
+                                                    "example": 200
+                                                },
+                                                "message": {
+                                                    "description": "Mensagem retornada",
+                                                    "type": "string",
+                                                    "example": "Item removido"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "status": {
+                                                    "description": "Status da operação",
+                                                    "type": "integer",
+                                                    "example": 400
+                                                },
+                                                "message": {
+                                                    "description": "Mensagem retornada",
+                                                    "type": "string",
+                                                    "example": "Nenhum item removido"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/util/log/clean": {
+            "get": {
+                "tags": [
+                    "Util v1"
+                ],
+                "summary": "Remover os logs",
+                "operationId": "logClean",
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "status": {
+                                                    "description": "Status da operação",
+                                                    "type": "integer",
+                                                    "example": 200
+                                                },
+                                                "message": {
+                                                    "description": "Mensagem retornada",
+                                                    "type": "string",
+                                                    "example": "Item removido"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "status": {
+                                                    "description": "Status da operação",
+                                                    "type": "integer",
+                                                    "example": 400
+                                                },
+                                                "message": {
+                                                    "description": "Mensagem retornada",
+                                                    "type": "string",
+                                                    "example": "Nenhum item removido"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/checkout/product": {
+            "get": {
+                "tags": [
+                    "Product v1"
+                ],
+                "summary": "Retorna os valores dos produtos indicados",
+                "description": "Retorna multiplos registros",
+                "operationId": "Product_all",
+                "parameters": [
+                    {
+                        "name": "storeName",
+                        "in": "path",
+                        "description": "Nome da loja [DROGARAIA, DROGASIL, ONOFRE]",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "sku",
+                        "in": "query",
+                        "description": "SKUs de busca. Ex: SKU",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "zipcode",
+                        "in": "query",
+                        "description": "Zipcode",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "qty",
+                        "in": "query",
+                        "description": "Quantity",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Sucesso na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "results": {
+                                            "properties": {
+                                                "price": {
+                                                    "properties": {
+                                                        "sku": {
+                                                            "description": "SKU do produto",
+                                                            "type": "integer",
+                                                            "example": 888
+                                                        },
+                                                        "valueFrom": {
+                                                            "description": "Valor inicial do produto",
+                                                            "type": "number",
+                                                            "example": 25.5
+                                                        },
+                                                        "valueTo": {
+                                                            "description": "Valor final do produto",
+                                                            "type": "number",
+                                                            "example": 14.02
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "stock": {
+                                                    "properties": {
+                                                        "sku": {
+                                                            "description": "SKU do produto",
+                                                            "type": "integer",
+                                                            "example": 888
+                                                        },
+                                                        "qty": {
+                                                            "description": "Quantidade de estoque do produto",
+                                                            "type": "integer",
+                                                            "example": 11861
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "quoteShipping": {
+                                                    "properties": {
+                                                        "value": {
+                                                            "description": "Valor do frete",
+                                                            "type": "number",
+                                                            "example": 9.73
+                                                        },
+                                                        "baseCost": {
+                                                            "description": "Custo base da entrega",
+                                                            "type": "number",
+                                                            "example": 9.73
+                                                        },
+                                                        "flow": {
+                                                            "description": "Flow",
+                                                            "type": "string",
+                                                            "example": "CD"
+                                                        },
+                                                        "id": {
+                                                            "description": "ID da entrega",
+                                                            "type": "integer",
+                                                            "example": 1
+                                                        },
+                                                        "estimateDays": {
+                                                            "description": "Dias estimados para entrega",
+                                                            "type": "integer",
+                                                            "example": 2
+                                                        },
+                                                        "idSubsidiary": {
+                                                            "description": "ID subisidiário",
+                                                            "type": "integer",
+                                                            "example": 3077
+                                                        },
+                                                        "origin": {
+                                                            "description": "Origem",
+                                                            "type": "string",
+                                                            "example": "intelipost"
+                                                        },
+                                                        "label": {
+                                                            "properties": {
+                                                                "default": {
+                                                                    "description": "Label default",
+                                                                    "type": "string",
+                                                                    "example": "Rápida"
+                                                                },
+                                                                "deadline": {
+                                                                    "description": "Label deadline",
+                                                                    "type": "string",
+                                                                    "example": "Rápida - 2 dia(s) útil(eis)"
+                                                                },
+                                                                "success": {
+                                                                    "description": "Label success",
+                                                                    "type": "string",
+                                                                    "example": "Rápida - 2 dia(s) útil(eis)"
+                                                                },
+                                                                "informative": {
+                                                                    "description": "Label informative",
+                                                                    "type": "string",
+                                                                    "example": "Entrega 1 dia útil"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        },
+                                                        "oms": {
+                                                            "description": "Dados de integração com o OMS",
+                                                            "properties": {
+                                                                "carrier": {
+                                                                    "description": "Carrier",
+                                                                    "type": "integer",
+                                                                    "example": 1
+                                                                },
+                                                                "service": {
+                                                                    "description": "Service",
+                                                                    "type": "integer",
+                                                                    "example": 2
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        },
+                                                        "shiftDelivery": {
+                                                            "description": "Shift delivery",
+                                                            "type": "array",
+                                                            "items": {
+                                                                "properties": {
+                                                                    "active": {
+                                                                        "description": "Status do registro",
+                                                                        "type": "integer",
+                                                                        "example": 1
+                                                                    },
+                                                                    "text": {
+                                                                        "description": "Label da entrega",
+                                                                        "type": "string",
+                                                                        "example": "Manhã (Entre 08h e 12h)"
+                                                                    },
+                                                                    "nextDay": {
+                                                                        "description": "Label da entrega",
+                                                                        "type": "integer",
+                                                                        "example": 1
+                                                                    },
+                                                                    "uptake": {
+                                                                        "description": "Label da entrega",
+                                                                        "type": "string",
+                                                                        "format": "date",
+                                                                        "example": "23:34"
+                                                                    },
+                                                                    "deliveryFrom": {
+                                                                        "description": "Label da entrega",
+                                                                        "type": "string",
+                                                                        "format": "date",
+                                                                        "example": "08:34"
+                                                                    },
+                                                                    "deliveryTo": {
+                                                                        "description": "Label da entrega",
+                                                                        "type": "string",
+                                                                        "format": "date",
+                                                                        "example": "11:34"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            }
+                                                        },
+                                                        "information": {
+                                                            "description": "Texto informativo a respeito do frete",
+                                                            "type": "string",
+                                                            "example": "Compre mais R$ 440 e ganhe frete grátis  para a região Sudeste e Centro Oeste."
+                                                        },
+                                                        "scheduledDelivery": {
+                                                            "description": "Informa que o tipo da entrega é agendado",
+                                                            "type": "boolean",
+                                                            "example": false
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Valor inválido na operação",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Os dados fornecidos são inválidos"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Registro não encotrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Mensagem retornada",
+                                            "type": "string",
+                                            "example": "Registro não encontrado"
+                                        },
+                                        "traceId": {
+                                            "description": "Id da transacao",
+                                            "type": "string",
+                                            "example": "7fa5fb8cad53cff1ff0149100d278ee3"
+                                        },
+                                        "description": {
+                                            "description": "Descrição do erro",
+                                            "type": "string",
+                                            "example": ""
+                                        },
+                                        "trace": {
+                                            "description": "Trace do problema",
+                                            "type": "string",
+                                            "example": ""
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

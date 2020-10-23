@@ -1,0 +1,28 @@
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+coverage:
+    enabled: true
+    show_uncovered: true
+    include:
+        - app/*
+    exclude:
+        - app/Events/Event.php
+        - app/Exceptions/Handler.php
+        - app/Domain/*
+        - app/Providers/AuthServiceProvider.php
+        - app/Providers/EventServiceProvider.php
+        - app/Http/Controllers/Controller.php
+        - app/Http/Middleware/Authenticate.php
+        - app/Providers/AppServiceProvider.php
+
+    low_limit: 90
+    high_limit: 100
+

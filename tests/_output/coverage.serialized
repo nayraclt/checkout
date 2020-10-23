@@ -1,0 +1,1328 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/var/www/html/ms/checkout/app/Util/Enum/EnumConfiguration.php' => 
+  array (
+  ),
+  '/var/www/html/ms/checkout/app/Services/Connect/Microservice/Price.php' => 
+  array (
+    21 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      4 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    22 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      4 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    33 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    34 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    36 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    38 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    39 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    40 => 
+    array (
+      0 => 'PriceTest::testResponseValidateReturnFail',
+    ),
+    43 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    44 => NULL,
+    54 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    56 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    58 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    59 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    60 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    61 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    62 => NULL,
+    71 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    73 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    74 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    75 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    76 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    77 => 
+    array (
+      0 => 'PriceTest::testGetProductPrice',
+      1 => 'PriceTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+    ),
+    78 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Repositories/Cache/ShippingCache.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'ShippingCacheTest::testGetShippingQuoteShouldNullToCacheNull',
+      1 => 'ShippingCacheTest::testGetShippingQuote',
+      2 => 'ShippingCacheTest::testPutShippingQuotehouldNullToArrayNull',
+      3 => 'ShippingCacheTest::testForgetShippingQuote',
+      4 => 'ShippingCacheTest::testHasShippingQuote',
+    ),
+    24 => 
+    array (
+      0 => 'ShippingCacheTest::testGetShippingQuoteShouldNullToCacheNull',
+      1 => 'ShippingCacheTest::testGetShippingQuote',
+      2 => 'ShippingCacheTest::testPutShippingQuotehouldNullToArrayNull',
+      3 => 'ShippingCacheTest::testForgetShippingQuote',
+      4 => 'ShippingCacheTest::testHasShippingQuote',
+    ),
+    28 => 
+    array (
+      0 => 'ShippingCacheTest::testGetBuildKey',
+      1 => 'ShippingCacheTest::testGetShippingQuoteShouldNullToCacheNull',
+      2 => 'ShippingCacheTest::testGetShippingQuote',
+      3 => 'ShippingCacheTest::testPutShippingQuotehouldNullToArrayNull',
+      4 => 'ShippingCacheTest::testForgetShippingQuote',
+      5 => 'ShippingCacheTest::testHasShippingQuote',
+    ),
+    29 => NULL,
+    42 => 
+    array (
+      0 => 'ShippingCacheTest::testGetShippingQuoteShouldNullToCacheNull',
+      1 => 'ShippingCacheTest::testGetShippingQuote',
+    ),
+    43 => 
+    array (
+      0 => 'ShippingCacheTest::testGetShippingQuoteShouldNullToCacheNull',
+      1 => 'ShippingCacheTest::testGetShippingQuote',
+    ),
+    44 => NULL,
+    58 => 
+    array (
+      0 => 'ShippingCacheTest::testPutShippingQuotehouldNullToArrayNull',
+    ),
+    59 => 
+    array (
+      0 => 'ShippingCacheTest::testPutShippingQuotehouldNullToArrayNull',
+    ),
+    60 => NULL,
+    70 => 
+    array (
+      0 => 'ShippingCacheTest::testForgetShippingQuote',
+    ),
+    71 => 
+    array (
+      0 => 'ShippingCacheTest::testForgetShippingQuote',
+    ),
+    72 => NULL,
+    85 => 
+    array (
+      0 => 'ShippingCacheTest::testHasShippingQuote',
+    ),
+    86 => 
+    array (
+      0 => 'ShippingCacheTest::testHasShippingQuote',
+    ),
+    87 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Services/ProductService.php' => 
+  array (
+    18 => 
+    array (
+      0 => 'ProductServiceTest::testAllCheckoutData',
+    ),
+    19 => 
+    array (
+      0 => 'ProductServiceTest::testAllCheckoutData',
+    ),
+    30 => 
+    array (
+      0 => 'ProductServiceTest::testAllCheckoutData',
+    ),
+    31 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Services/Helper/Composition.php' => 
+  array (
+    11 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testGetWithoutPriceStockShipping',
+      2 => 'CompositionTest::testPriceWithoutStockShippig',
+      3 => 'CompositionTest::testPriceStockWithoutShipping',
+      4 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      7 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    12 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testGetWithoutPriceStockShipping',
+      2 => 'CompositionTest::testPriceWithoutStockShippig',
+      3 => 'CompositionTest::testPriceStockWithoutShipping',
+      4 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      7 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    16 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testPriceWithoutStockShippig',
+      2 => 'CompositionTest::testPriceStockWithoutShipping',
+      3 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    17 => 
+    array (
+      0 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    20 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testPriceWithoutStockShippig',
+      2 => 'CompositionTest::testPriceStockWithoutShipping',
+    ),
+    21 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testPriceWithoutStockShippig',
+      2 => 'CompositionTest::testPriceStockWithoutShipping',
+    ),
+    22 => NULL,
+    26 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testPriceStockWithoutShipping',
+      2 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    27 => 
+    array (
+      0 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    30 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testPriceStockWithoutShipping',
+    ),
+    31 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testPriceStockWithoutShipping',
+    ),
+    32 => NULL,
+    36 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    37 => 
+    array (
+      0 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    40 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+    ),
+    41 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+    ),
+    42 => NULL,
+    46 => 
+    array (
+      0 => 'CompositionTest::testWithPriceStockShipping',
+      1 => 'CompositionTest::testGetWithoutPriceStockShipping',
+      2 => 'CompositionTest::testPriceWithoutStockShippig',
+      3 => 'CompositionTest::testPriceStockWithoutShipping',
+      4 => 'CompositionTest::testCompositionDoNothingWithNoArguments',
+    ),
+    47 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Services/ProductServiceInterface.php' => 
+  array (
+  ),
+  '/var/www/html/ms/checkout/app/Http/API/SwaggerTitle.php' => 
+  array (
+  ),
+  '/var/www/html/ms/checkout/app/Http/API/v1/Resources/ProductResource.php' => 
+  array (
+    11 => 
+    array (
+      0 => 'ProductResourceTest::testConfigureNodeParser',
+    ),
+    12 => 
+    array (
+      0 => 'ProductResourceTest::testConfigureNodeParser',
+    ),
+    15 => 
+    array (
+      0 => 'ProductResourceTest::testConfigureNodeParser',
+    ),
+    16 => NULL,
+    21 => 
+    array (
+      0 => 'ProductResourceTest::testConfigureMainParser',
+    ),
+    23 => 
+    array (
+      0 => 'ProductResourceTest::testConfigureMainParser',
+    ),
+    24 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Http/API/v1/Requests/ProductRequest.php' => 
+  array (
+    19 => 
+    array (
+      0 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToException"',
+      1 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"',
+    ),
+    23 => 
+    array (
+      0 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"',
+    ),
+    27 => 
+    array (
+      0 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"',
+    ),
+    30 => 
+    array (
+      0 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"',
+    ),
+    31 => 
+    array (
+      0 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"',
+    ),
+    33 => 
+    array (
+      0 => 'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"',
+    ),
+    34 => NULL,
+    45 => 
+    array (
+      0 => 'ProductRequestTest::testValidateAdd with data set "shouldTrueToException"',
+      1 => 'ProductRequestTest::testValidateAdd with data set "shouldTrueToValidation"',
+    ),
+    46 => 
+    array (
+      0 => 'ProductRequestTest::testValidateAdd with data set "shouldTrueToException"',
+      1 => 'ProductRequestTest::testValidateAdd with data set "shouldTrueToValidation"',
+    ),
+    49 => 
+    array (
+      0 => 'ProductRequestTest::testValidateAdd with data set "shouldTrueToValidation"',
+    ),
+    51 => 
+    array (
+      0 => 'ProductRequestTest::testValidateAdd with data set "shouldTrueToValidation"',
+    ),
+    52 => NULL,
+    63 => 
+    array (
+      0 => 'ProductRequestTest::testValidateUpdate with data set "shouldTrueToException"',
+      1 => 'ProductRequestTest::testValidateUpdate with data set "shouldTrueToValidation"',
+    ),
+    64 => 
+    array (
+      0 => 'ProductRequestTest::testValidateUpdate with data set "shouldTrueToException"',
+      1 => 'ProductRequestTest::testValidateUpdate with data set "shouldTrueToValidation"',
+    ),
+    67 => 
+    array (
+      0 => 'ProductRequestTest::testValidateUpdate with data set "shouldTrueToValidation"',
+    ),
+    69 => 
+    array (
+      0 => 'ProductRequestTest::testValidateUpdate with data set "shouldTrueToValidation"',
+    ),
+    70 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Http/API/v1/Controllers/ProductController.php' => 
+  array (
+    20 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrueToException"',
+      1 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    21 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrueToException"',
+      1 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    356 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrueToException"',
+      1 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    359 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrueToException"',
+      1 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    360 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrueToException"',
+    ),
+    361 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrueToException"',
+    ),
+    364 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    365 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    366 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    369 => 
+    array (
+      0 => 'ProductControllerTest::testAll with data set "shouldTrue"',
+    ),
+    370 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Services/Connect/Microservice/Stock.php' => 
+  array (
+    21 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      4 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    22 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      4 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    33 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    34 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    36 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    38 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    39 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    40 => 
+    array (
+      0 => 'StockTest::testResponseValidateReturnFail',
+    ),
+    43 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    44 => NULL,
+    54 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    56 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    58 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    59 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    60 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    61 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    62 => NULL,
+    71 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    73 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    74 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    75 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    76 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    77 => 
+    array (
+      0 => 'StockTest::testGetProductStock',
+      1 => 'StockTest::testResponseValidateReturnFail',
+      2 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    78 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Repositories/Cache/StockCache.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'StockCacheTest::testGetStockShouldNullToCacheNull',
+      1 => 'StockCacheTest::testGetStock',
+      2 => 'StockCacheTest::testPutStockhouldNullToArrayNull',
+      3 => 'StockCacheTest::testForgetStock',
+      4 => 'StockCacheTest::testHasStock',
+    ),
+    24 => 
+    array (
+      0 => 'StockCacheTest::testGetStockShouldNullToCacheNull',
+      1 => 'StockCacheTest::testGetStock',
+      2 => 'StockCacheTest::testPutStockhouldNullToArrayNull',
+      3 => 'StockCacheTest::testForgetStock',
+      4 => 'StockCacheTest::testHasStock',
+    ),
+    28 => 
+    array (
+      0 => 'StockCacheTest::testGetBuildKey',
+      1 => 'StockCacheTest::testGetStockShouldNullToCacheNull',
+      2 => 'StockCacheTest::testGetStock',
+      3 => 'StockCacheTest::testPutStockhouldNullToArrayNull',
+      4 => 'StockCacheTest::testForgetStock',
+      5 => 'StockCacheTest::testHasStock',
+    ),
+    29 => NULL,
+    40 => 
+    array (
+      0 => 'StockCacheTest::testGetStockShouldNullToCacheNull',
+      1 => 'StockCacheTest::testGetStock',
+    ),
+    41 => 
+    array (
+      0 => 'StockCacheTest::testGetStockShouldNullToCacheNull',
+      1 => 'StockCacheTest::testGetStock',
+    ),
+    42 => NULL,
+    54 => 
+    array (
+      0 => 'StockCacheTest::testPutStockhouldNullToArrayNull',
+    ),
+    55 => 
+    array (
+      0 => 'StockCacheTest::testPutStockhouldNullToArrayNull',
+    ),
+    56 => NULL,
+    66 => 
+    array (
+      0 => 'StockCacheTest::testForgetStock',
+    ),
+    67 => 
+    array (
+      0 => 'StockCacheTest::testForgetStock',
+    ),
+    68 => NULL,
+    79 => 
+    array (
+      0 => 'StockCacheTest::testHasStock',
+    ),
+    80 => 
+    array (
+      0 => 'StockCacheTest::testHasStock',
+    ),
+    81 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Console/Kernel.php' => 
+  array (
+  ),
+  '/var/www/html/ms/checkout/app/Services/ProductIntegrationServiceInterface.php' => 
+  array (
+  ),
+  '/var/www/html/ms/checkout/app/Services/ProductIntegrationService.php' => 
+  array (
+    49 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    50 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    51 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    52 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    53 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    64 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    65 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    67 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    68 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    71 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    73 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    74 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    75 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    76 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    77 => 
+    array (
+      0 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      1 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      2 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    78 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Repositories/Cache/PriceCache.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'PriceCacheTest::testGetPriceShouldNullToCacheNull',
+      1 => 'PriceCacheTest::testGetPrice',
+      2 => 'PriceCacheTest::testPutPriceShouldNullToArrayNull',
+      3 => 'PriceCacheTest::testForgetPrice',
+      4 => 'PriceCacheTest::testHasPrice',
+    ),
+    24 => 
+    array (
+      0 => 'PriceCacheTest::testGetPriceShouldNullToCacheNull',
+      1 => 'PriceCacheTest::testGetPrice',
+      2 => 'PriceCacheTest::testPutPriceShouldNullToArrayNull',
+      3 => 'PriceCacheTest::testForgetPrice',
+      4 => 'PriceCacheTest::testHasPrice',
+    ),
+    28 => 
+    array (
+      0 => 'PriceCacheTest::testGetBuildKey',
+      1 => 'PriceCacheTest::testGetPriceShouldNullToCacheNull',
+      2 => 'PriceCacheTest::testGetPrice',
+      3 => 'PriceCacheTest::testPutPriceShouldNullToArrayNull',
+      4 => 'PriceCacheTest::testForgetPrice',
+      5 => 'PriceCacheTest::testHasPrice',
+    ),
+    29 => NULL,
+    40 => 
+    array (
+      0 => 'PriceCacheTest::testGetPriceShouldNullToCacheNull',
+      1 => 'PriceCacheTest::testGetPrice',
+    ),
+    41 => 
+    array (
+      0 => 'PriceCacheTest::testGetPriceShouldNullToCacheNull',
+      1 => 'PriceCacheTest::testGetPrice',
+    ),
+    42 => NULL,
+    54 => 
+    array (
+      0 => 'PriceCacheTest::testPutPriceShouldNullToArrayNull',
+    ),
+    55 => 
+    array (
+      0 => 'PriceCacheTest::testPutPriceShouldNullToArrayNull',
+    ),
+    56 => NULL,
+    66 => 
+    array (
+      0 => 'PriceCacheTest::testForgetPrice',
+    ),
+    67 => 
+    array (
+      0 => 'PriceCacheTest::testForgetPrice',
+    ),
+    68 => NULL,
+    79 => 
+    array (
+      0 => 'PriceCacheTest::testHasPrice',
+    ),
+    80 => 
+    array (
+      0 => 'PriceCacheTest::testHasPrice',
+    ),
+    81 => NULL,
+  ),
+  '/var/www/html/ms/checkout/app/Services/Connect/Microservice/Shipping.php' => 
+  array (
+    21 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      7 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    22 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+      7 => 'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse',
+    ),
+    33 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    34 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    35 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    36 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    37 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    39 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      3 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      4 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      5 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      6 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    40 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuoteWithoutZipcode',
+      1 => 'ShippingTest::testGetShippingQuoteWithoutQty',
+      2 => 'ShippingTest::testGetShippingQuoteWithoutValueTo',
+      3 => 'ProductIntegrationServiceTest::testAllCheckoutData',
+      4 => 'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo',
+    ),
+    43 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    45 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    46 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    47 => 
+    array (
+      0 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    50 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+    ),
+    51 => NULL,
+    63 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    65 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    67 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    68 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    69 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    70 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    71 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    72 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    73 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    75 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    76 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    77 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    78 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    81 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    82 => NULL,
+    91 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    93 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    94 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    95 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    96 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    97 => 
+    array (
+      0 => 'ShippingTest::testGetShippingQuote',
+      1 => 'ShippingTest::testResponseValidateReturnFail',
+    ),
+    98 => NULL,
+  ),
+));
+$coverage->setTests(array (
+  'UNCOVERED_FILES_FROM_WHITELIST' => 
+  array (
+    'size' => 'unknown',
+    'status' => -1,
+  ),
+  'ProductControllerTest::testAll with data set "shouldTrueToException"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductControllerTest::testAll with data set "shouldTrue"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductRequestTest::testValidateFind with data set "shouldTrueToException"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductRequestTest::testValidateFind with data set "shouldTrueToValidation"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductRequestTest::testValidateAdd with data set "shouldTrueToException"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductRequestTest::testValidateAdd with data set "shouldTrueToValidation"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductRequestTest::testValidateUpdate with data set "shouldTrueToException"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductRequestTest::testValidateUpdate with data set "shouldTrueToValidation"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductResourceTest::testConfigureMainParser' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductResourceTest::testConfigureNodeParser' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceCacheTest::testGetBuildKey' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceCacheTest::testGetPriceShouldNullToCacheNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceCacheTest::testGetPrice' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceCacheTest::testPutPriceShouldNullToArrayNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceCacheTest::testForgetPrice' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceCacheTest::testHasPrice' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingCacheTest::testGetBuildKey' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingCacheTest::testGetShippingQuoteShouldNullToCacheNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingCacheTest::testGetShippingQuote' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingCacheTest::testPutShippingQuotehouldNullToArrayNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingCacheTest::testForgetShippingQuote' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingCacheTest::testHasShippingQuote' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockCacheTest::testGetBuildKey' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockCacheTest::testGetStockShouldNullToCacheNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockCacheTest::testGetStock' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockCacheTest::testPutStockhouldNullToArrayNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockCacheTest::testForgetStock' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockCacheTest::testHasStock' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceTest::testGetProductPrice' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'PriceTest::testResponseValidateReturnFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingTest::testGetShippingQuote' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingTest::testResponseValidateReturnFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingTest::testGetShippingQuoteWithoutZipcode' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingTest::testGetShippingQuoteWithoutQty' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ShippingTest::testGetShippingQuoteWithoutValueTo' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockTest::testGetProductStock' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'StockTest::testResponseValidateReturnFail' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'CompositionTest::testWithPriceStockShipping' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'CompositionTest::testGetWithoutPriceStockShipping' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'CompositionTest::testPriceWithoutStockShippig' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'CompositionTest::testPriceStockWithoutShipping' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'CompositionTest::testCompositionDoNothingWithNoArguments' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductIntegrationServiceTest::testAllCheckoutData' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductIntegrationServiceTest::testAllCheckoutDataSetValueTo' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductIntegrationServiceTest::testPriceStockShippingShouldReturnFalse' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'ProductServiceTest::testAllCheckoutData' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/var/www/html/ms/checkout/app/Services/Helper/Composition.php' => true,
+  '/var/www/html/ms/checkout/app/Services/ProductIntegrationService.php' => true,
+  '/var/www/html/ms/checkout/app/Services/Connect/Microservice/Shipping.php' => true,
+  '/var/www/html/ms/checkout/app/Services/Connect/Microservice/Price.php' => true,
+  '/var/www/html/ms/checkout/app/Services/Connect/Microservice/Stock.php' => true,
+  '/var/www/html/ms/checkout/app/Services/ProductServiceInterface.php' => true,
+  '/var/www/html/ms/checkout/app/Services/ProductService.php' => true,
+  '/var/www/html/ms/checkout/app/Services/ProductIntegrationServiceInterface.php' => true,
+  '/var/www/html/ms/checkout/app/Util/Enum/EnumConfiguration.php' => true,
+  '/var/www/html/ms/checkout/app/Http/API/SwaggerTitle.php' => true,
+  '/var/www/html/ms/checkout/app/Http/API/v1/Resources/ProductResource.php' => true,
+  '/var/www/html/ms/checkout/app/Http/API/v1/Requests/ProductRequest.php' => true,
+  '/var/www/html/ms/checkout/app/Http/API/v1/Controllers/ProductController.php' => true,
+  '/var/www/html/ms/checkout/app/Console/Kernel.php' => true,
+  '/var/www/html/ms/checkout/app/Repositories/Cache/StockCache.php' => true,
+  '/var/www/html/ms/checkout/app/Repositories/Cache/ShippingCache.php' => true,
+  '/var/www/html/ms/checkout/app/Repositories/Cache/PriceCache.php' => true,
+));
+
+return $coverage;

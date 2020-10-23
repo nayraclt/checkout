@@ -1,0 +1,4 @@
+include:
+  - project: 'ecommerce/devops/php-services'
+    ref: master
+    file: '.gitlab-ci.yml'
